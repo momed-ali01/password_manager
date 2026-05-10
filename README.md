@@ -5,6 +5,7 @@ A secure password management application built with Python, available in both GU
 ## Features
 
 ### GUI Version
+
 - Generate strong, random passwords
 - Store website credentials securely
 - Search for saved passwords
@@ -14,6 +15,7 @@ A secure password management application built with Python, available in both GU
 - Input validation and error handling
 
 ### CLI Version
+
 - Simple command-line interface
 - Add new passwords
 - View saved passwords
@@ -28,12 +30,22 @@ A secure password management application built with Python, available in both GU
 ## Installation
 
 1. Clone this repository:
+
 ```bash
 git clone https://github.com/<username>/password_manager.git
 cd password_manager
 ```
 
-2. Install the required dependencies:
+2. Create a virtual environment (optional but recommended):
+
+```bash
+python -m venv venv
+venv\Scripts\activate # On Windows
+source venv/bin/activate # On macOS/Linux
+```
+
+3. Install the required dependencies:
+
 ```bash
 pip install -r requirements.txt
 ```
@@ -41,13 +53,17 @@ pip install -r requirements.txt
 ## Usage
 
 ### GUI Version
+
 Run the GUI application:
+
 ```bash
 python password_manager_gui.py
 ```
 
 ### CLI Version
+
 Run the command-line application:
+
 ```bash
 python password_manager_cli.py
 ```
@@ -55,6 +71,7 @@ python password_manager_cli.py
 ### Features in Detail
 
 #### GUI Version
+
 1. **Password Generation**
    - Generates 12-character strong passwords
    - Includes uppercase letters, lowercase letters, numbers, and special characters
@@ -77,6 +94,7 @@ python password_manager_cli.py
    - Default email field for convenience
 
 #### CLI Version
+
 1. **Simple Commands**
    - Type 'add' to add a new password
    - Type 'view' to see existing passwords
@@ -89,19 +107,22 @@ python password_manager_cli.py
 ## Data Storage
 
 ### GUI Version
+
 The application stores all passwords and credentials in a `data.json` file. The data is stored in the following format:
 
 ```json
 {
-    "Website": {
-        "email": "user@example.com",
-        "password": "generated_password"
-    }
+  "Website": {
+    "email": "user@example.com",
+    "password": "generated_password"
+  }
 }
 ```
 
 ### CLI Version
+
 The application stores passwords in a `passwords.txt` file in the format:
+
 ```
 username|password
 ```
@@ -118,4 +139,4 @@ Feel free to submit issues and enhancement requests!
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is for educational purposes.
